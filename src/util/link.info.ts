@@ -1,5 +1,6 @@
 import * as os from 'os';
 import axios from 'axios';
+import env from 'src/config/config';
 
 async function getPublicIP() {
   try {
@@ -34,6 +35,8 @@ function displayIPInfo(internalIP: string, publicIP: string, port: number) {
 export const urlInfo = async (port: number) => {
   const internalIP = await getInternalIP();
   const publicIP = await getPublicIP();
+
+  env.PUBLIC_IP = publicIP;
 
   displayIPInfo(internalIP, publicIP, port);
 }
