@@ -1,6 +1,9 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+So this repo is a demonstration of how to populate a dynamic variable into the window of the browser from the server side, this feature makes devOps easier.
+
+- dynamic change env variable on online app, like S3 position, API base URL, and so on....
+- whitelist based on domain, country
 
 ## Installation
 
